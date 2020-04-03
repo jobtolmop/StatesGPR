@@ -40,7 +40,6 @@ public class PlayerControls : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
         float h = horizontalRotation * Input.GetAxis("Mouse X");
-        float v = horizontalRotation * Input.GetAxis("Mouse Y");
         transform.Rotate(0, h, 0);
     }
 }
