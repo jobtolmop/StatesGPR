@@ -9,7 +9,6 @@ public class BasicEnemy : State
     public Transform target;
     NavMeshAgent agent;
     bool GOTOBEREND;
-    private List<Transform> patrolroute;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,11 +48,6 @@ public class BasicEnemy : State
             agent.SetDestination(transform.position);
             CurrentState = cState.Patrol;
         }
-    }
-
-    void setPatrol()
-    {
-        patrolroute.Clear();
     }
 
 }
